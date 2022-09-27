@@ -34,11 +34,18 @@
 
 .left,
 .right{
-    width: 100px;
-    height: 5px;
-    background-color: var(--bg_light);
+    width: 12%;
+    height: 4px;
     border-radius: 1rem;
 }
+
+.left_second,
+.right_second{
+    width: 6%;
+    height: 3px;
+    border-radius: 1rem;
+}
+
 
 
 .bg_alternative{
