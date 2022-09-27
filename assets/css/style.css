@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+:root{
+    --bg_alternative: #1ABC9C;
+    --bg_footer: #3A546D;
+    --bg_top_bot: #2C3E50;
+    --bg_light: #FFFFFF;
+}
+
+
+#site_header{
+    background-color: var(--bg_top_bot);
+}
+
 .debug{
     width: 300px;
     height: 300px;
@@ -19,3 +31,16 @@
     height: 50px;
 }
 
+
+.left,
+.right{
+    width: 100px;
+    height: 5px;
+    background-color: var(--bg_light);
+    border-radius: 1rem;
+}
+
+
+.bg_alternative{
+    background-color: var(--bg_alternative);
+}

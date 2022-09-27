@@ -5,33 +5,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header class="bg-secondary" id="site_header">
+    <header id="site_header">
         <!-- Nav-->
-        <div class="container-sm text-center py-3">
-            <div class="row">
-                <div class="col text-start">Lorem, ipsum.</div>
-                <div class="col text-end">
-                    <span>Lorem.</span>
-                    <span class="mx-3">Lorem.</span>
-                    <span>Lorem.</span>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container">
+                <a class="navbar-brand text-light fw-bold" href="#">START BOOTSTRAP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold" aria-current="page" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold" aria-current="page" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold" aria-current="page" href="#">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <!-- /#site_header -->
     <main id="site_main">
-        <div class="container-fluid bg-success bg-gradient">
+        <div class="container-fluid bg_alternative">
             <!-- Jumbotron-->
             <div class="container text-center">
                 <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <div class="debug bg-dark my-5 ">
+                    <div class="col  mb-5">
+                        <img class="test pt-5" src="./assets/img/avatar.svg" alt="" style="width: 20%;">
+                        <h1 class="pt-2 fw-bold text-light">START BOOTSTRAP</h1>
+                        <div class=" d-flex justify-content-center">
+                            <div class="left align-self-center"></div>
+                            <span class="mx-3 text-light"><i class="fa-solid fa-star fs-2"></i></span>
+                            <div class="right align-self-center"></div>
+                        </div>
+                        <div class="pt-2">
+                            <span class="fs-5 text-light">GRAPHIC ARTIST -</span>
+                            <span class="fs-5 text-light">WEB DESIGNER -</span>
+                            <span class="fs-5 text-light">ILLUSTRATOR</span>
                         </div>
                     </div>
                 </div>
@@ -45,22 +71,24 @@
                         123
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                <div class="col mb-3">
                     <img class="img-fluid" src="./assets/img/cabin.png" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                <div class="col mb-3">
                     <img class="img-fluid" src="./assets/img/cake.png" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                <div class="col mb-3">
                     <img class="img-fluid" src="./assets/img/circus.png" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                <div class="col mb-3">
                     <img class="img-fluid" src="./assets/img/game.png" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                <div class="col mb-3">
                     <img class="img-fluid" src="./assets/img/safe.png" alt="">
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+                <div class="col mb-3">
                     <img class="img-fluid" src="./assets/img/submarine.png" alt="">
                 </div>
             </div>
@@ -107,7 +135,7 @@
                 </div>
                 <div class="col-12">
                     <div class="mb-3">
-                        <label  class="form-label">Email address</label>
+                        <label class="form-label">Email address</label>
                         <input type="email" class="form-control" placeholder="name@example.com">
                     </div>
                 </div>
@@ -125,23 +153,24 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">Send</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Send</button>
                 </div>
             </div>
         </div>
-        
+
     </main>
     <!-- /#site_main -->
     <footer id="site_footer">
         <div class="container-fluid bg-secondary pb-5 pt-5">
             <div class="container text-center">
                 <div class="row text-light">
-                    <div class="col-xl-4 col-sm-12 bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+                    <div class="col-xl-4 col-sm-12 bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores,
                         voluptate!</div>
-                    <div class="col-xl-4 col-sm-12 bg-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, rem.</div>
-                    <div class="col-xl-4 col-sm-12 bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, commodi!</div>
+                    <div class="col-xl-4 col-sm-12 bg-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Vel, rem.</div>
+                    <div class="col-xl-4 col-sm-12 bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium, commodi!</div>
                 </div>
             </div>
         </div>
